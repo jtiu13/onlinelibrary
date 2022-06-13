@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--------------------NavBar--------------------------->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand mt-2" href="#"
+        ><img
+          src="library/inazon.png"
+          alt="logo"
+          class="img-fluid ms-3"
+          style="width: 95px; height: 95px"
+      /></a>
+      <button
+        class="navbar-toggler me-3"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#NavDropdown"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="NavDropdown">
+        <ul class="navbar-nav ms-4 text-center fs-4">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <form action="" class="form-inline ms-auto mb-4 me-2">
+          <label for="search" class="form-label">Search</label>
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search"
+            class="form-control"
+          />
+        </form>
+        <button type="submit" class="btn btn-info mt-2 me-3">Search</button>
+      </div>
+    </nav>
+
+    <!--------------End------------------------------->
+
+    <!---------------------Library--------------------------------->
+    <form class="container-fluid">
+      <fieldset class="row">
+        <div class="col-lg-4 p-2">
+          <input
+            class="form-control"
+            type="text"
+            placeholder="Enter Book Title, Author, etc"
+            id="search"
+          />
+        </div>
+        <div class="col-lg-4 p-2">
+          <select class="form-select" name="filter" id="filter">
+            <option>Book Title</option>
+            <option>Author</option>
+            <option>Date Published</option>
+          </select>
+        </div>
+        <div class="col-lg-2 p-2">
+          <button class="btn btn-secondary">Search</button>
+        </div>
+      </fieldset>
+    </form>
+    <div class="table-responsive-sm">
+      <table
+        class="table table-success table-striped table-bordered table-hover"
+      >
+        <tr>
+          <th>Book Cover</th>
+          <th>Book Title</th>
+          <th>Author</th>
+          <th>Date Publish</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td><img src="library/image1.jpg" alt="image1" width="100" /></td>
+          <td class="book-title"><cite>To Kill A Mocking Bird</cite></td>
+          <td><strong>Harper Lee</strong></td>
+          <td><p>July 11, 1960</p></td>
+          <td>
+            <button type="submit" class="btn btn-secondary">Add To Cart</button>
+            <button type="submit" class="btn btn-warning">
+              Add To Wishlist
+            </button>
+            <button type="submit" class="btn btn-success">Buy Now</button>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="library/image2.jpg" alt="image2" width="100" /></td>
+          <td class="book-title"><cite>The Great Gatsby</cite></td>
+          <td><strong>F. Scott Fitzgerald</strong></td>
+          <td><p>April 10, 1925</p></td>
+          <td>
+            <button type="submit" class="btn btn-secondary">Add To Cart</button>
+            <button type="submit" class="btn btn-warning">
+              Add To Wishlist
+            </button>
+            <button type="submit" class="btn btn-success">Buy Now</button>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="library/image3.jpg" alt="image3" width="100" /></td>
+          <td class="book-title"><cite>Nineteen Eighty-Four</cite></td>
+          <td><strong>George Orwell</strong></td>
+          <td><p>June 8, 1949</p></td>
+          <td>
+            <button type="submit" class="btn btn-secondary">Add To Cart</button>
+            <button type="submit" class="btn btn-warning">
+              Add To Wishlist
+            </button>
+            <button type="submit" class="btn btn-success">Buy Now</button>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="library/image4.jpg" alt="image4" width="100" /></td>
+          <td class="book-title">
+            <cite>Adventures of Huckleberry Finn</cite>
+          </td>
+          <td><strong>Mark Twain</strong></td>
+          <td><p>1884</p></td>
+          <td>
+            <button type="submit" class="btn btn-secondary">Add To Cart</button>
+            <button type="submit" class="btn btn-warning">
+              Add To Wishlist
+            </button>
+            <button type="submit" class="btn btn-success">Buy Now</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="d-flex justify-content-center">
+      <a href="checkout.html" target="_blank"
+        ><button class="btn btn-warning" type="submit">SUBMIT</button></a
+      >
+    </div>
+    <!--------------------------------------End----------------------------------------->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
